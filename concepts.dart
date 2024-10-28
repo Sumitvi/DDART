@@ -14,6 +14,12 @@ class Cookies {
     return _height * _width;
   }
 
+  // Getters
+
+  int get height => _height;
+
+  // Setters
+
   // method
   void baking() {
     print("Your Cookie Shape is $shape and the size is $size cm");
@@ -30,7 +36,8 @@ void main() {
 
   Cookies c1 = new Cookies(shape, size);
 
-  print("Height is ${c1._height}" );
-  print("width is ${c1._width}" );
-  print("Total = ${c1.calculateSize()}");
+  print(c1.height);
+  // print("Height is ${c1._height}" );
+  // print("width is ${c1._width}" );
+  // print("Total = ${c1.calculateSize()}");
 }
