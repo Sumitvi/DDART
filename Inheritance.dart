@@ -5,12 +5,12 @@ class Parent {
   double height = 5.6;
 
   void Happy() {
-    print("We Are Happy Family");
+    print("We Are Happy Family"); 
   }
 }
 
 class Child extends Parent {
-  String name = "Shaurya";
+  String Name = "Shaurya";
 
   void education() {
     print("Pursing Engineering");
@@ -20,6 +20,6 @@ class Child extends Parent {
 void main() {
   Child c1 = new Child();
   print(c1.caste);
-  print(c1.name);
+  print(c1.Name);
   c1.Happy();
 }
