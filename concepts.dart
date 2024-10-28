@@ -18,7 +18,11 @@ class Cookies {
 
   int get height => _height;
 
-  // Setters
+  // Setter
+
+  set setHeight(int h) {
+    _height = h;
+  }
 
   // method
   void baking() {
@@ -40,4 +44,7 @@ void main() {
   // print("Height is ${c1._height}" );
   // print("width is ${c1._width}" );
   // print("Total = ${c1.calculateSize()}");
+
+  c1.setHeight = 300;
+  print(c1.height);
 }
