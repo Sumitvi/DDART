@@ -10,21 +10,24 @@ class Cookies {
   double size;
 
   Cookies(this.shape, this.size) {
-    print("Constructor has initialize");
+    // print("Constructor has initialize");
     baking();
-    print(shape);
-    print(size);
+    // print(shape);
+    // print(size);
   }
 
   // method
   void baking() {
-    print("Cookies has baked");
+    print("Your Cookie Shape is $shape and the size is $size cm");
   }
 
   bool isCool() {
     return false;
   }
 }
+
+
+
 
 void main() {
 
