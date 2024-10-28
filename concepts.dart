@@ -1,20 +1,17 @@
 class Cookies {
-  // String Shape = "Circle";
-  // double Size = 13.4;
-
-  // Constructor
-  // 1) it is same as class name
-  // 2) does'nt contined any return type
-
   String shape;
   double size;
 
-  // This is Parameterised Constructor
   Cookies(this.shape, this.size) {
-    // print("Constructor has initialize");
     baking();
-    // print(shape);
-    // print(size);
+  }
+
+  // Private Variable
+  int _height = 5;
+  int _width = 6;
+
+  int calculateSize() {
+    return _height * _width;
   }
 
   // method
@@ -27,13 +24,13 @@ class Cookies {
   }
 }
 
-
-
-
 void main() {
-
   String shape = "Ractangle";
   double size = 13.3;
 
-  Cookies c1 = new Cookies(shape,size);
+  Cookies c1 = new Cookies(shape, size);
+
+  print("Height is ${c1._height}" );
+  print("width is ${c1._width}" );
+  print("Total = ${c1.calculateSize()}");
 }
