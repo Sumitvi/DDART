@@ -4,6 +4,9 @@ void main() {
 
   Cat c1 = new Cat();
   c1.makeSound();
+
+  Elephant e1 = new Elephant();
+  e1.makeSound();
 }
 
 abstract class Animal {
@@ -20,5 +23,12 @@ class Dog extends Animal {
 class Cat extends Animal {
   void makeSound() {
     print("Meow");
+  }
+}
+
+class Elephant implements Animal {
+  @override
+  void makeSound() {
+    print("HaHaHaHaHa");
   }
 }
