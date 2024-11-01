@@ -13,4 +13,8 @@ void main() {
 
   marks['Sumit'] = 88;
   print(marks['Sumit']);
+
+
+  print(marks['Samarth']);
+
 }
