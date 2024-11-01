@@ -1,7 +1,13 @@
 void main() async {
-  final result = await AftertwaoSec();
+  // final result = await AftertwaoSec();
 
-  print(result);
+  // print(result);
+
+  AftertwaoSec().then((val) {
+    print(val);
+  }).catchError((err) {
+    print(err);
+  });
 }
 
 Future<String> AftertwaoSec() {
