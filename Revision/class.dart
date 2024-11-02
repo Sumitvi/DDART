@@ -1,16 +1,18 @@
 void main() {
   Ractangle r1 = Ractangle();
 
-  r1.Getvalue(20, 10);
+  int area = r1.Getvalue(r1._height, r1._width);
+  print("Area of Ractangle is $area");
 }
 
 class Ractangle {
-  int height = 20;
-  int width = 10;
+  Ractangle() {
+    print("Constructor Called with any calling");
+  }
+  int _height = 20;
+  int _width = 10;
 
-  void Getvalue(int h, int w) {
-    height = h;
-    width = w;
-    print(h * w);
+  int Getvalue(int _height, int _width) {
+    return (_height * _width);
   }
 }
