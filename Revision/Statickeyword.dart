@@ -12,6 +12,3 @@ void main() {
   print(Constants.bye);
   print(Constants.getValue());
 }
-
-
-
